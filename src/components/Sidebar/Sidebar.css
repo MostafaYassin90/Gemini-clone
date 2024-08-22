@@ -1,0 +1,225 @@
+.sidebar {
+  width: 350px;
+  background-color: #eee;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: 0.5s;
+}
+
+.sidebar .toggle-menu {
+  text-align: left;
+}
+
+.sidebar .toggle-menu .menu-icon {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.sidebar .toggle-menu .menu-icon:hover {
+  background-color: #ddd;
+}
+
+.sidebar .new-chat {
+  width: 100%;
+}
+
+.sidebar .new-chat .chat {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  background: #ddd;
+  border-radius: 20px;
+  width: 150px;
+  padding: 8px 22px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sidebar .new-chat .chat>img {
+  width: 16px;
+}
+
+.sidebar .new-chat .chat>p {
+  margin: 0;
+}
+
+.sidebar .recent {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar .recent .recent-title {
+  font-size: 16px;
+}
+
+.sidebar .recent .recent-entry {
+  display: flex;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 4px 8px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+  animation: fadeIn 1.5s;
+}
+
+.sidebar .recent .recent-entry:hover {
+  background: #ddd;
+
+}
+
+.sidebar .recent .recent-entry img {
+  width: 26px;
+}
+
+.sidebar .recent .recent-entry p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.sidebar .links {
+  margin-top: 20px;
+}
+
+.sidebar .links .link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 100%;
+  padding: 4px 8px;
+  border-radius: 15px;
+  color: #111;
+  position: relative;
+  transition: 0.3s;
+}
+
+.sidebar .links .link::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0075ff;
+  border-radius: 50%;
+}
+
+.sidebar .links .link:hover {
+  background: #ddd;
+}
+
+.sidebar .links .link>img {
+  width: 18px;
+}
+
+.sidebar .links .link>p {
+  margin: 0 0 2px 0;
+  font-weight: 600;
+}
+
+.sidebar .location {
+  display: flex;
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+.sidebar .location .bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3f51b5;
+  margin-top: 8px;
+}
+
+.sidebar .location .location-info p {
+  margin: 0;
+}
+
+.sidebar .location .location-info>div {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0075ff;
+  gap: 3px
+}
+
+/*  ********************************************** */
+/* Sidebar With Close Class */
+.sidebar.close {
+  width: 70px;
+  transition: 0.5s;
+}
+
+.sidebar.close .toggle-menu .menu-icon {
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+}
+
+.sidebar.close .new-chat .chat {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  justify-content: center;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+.sidebar.close .new-chat .chat p {
+  display: none;
+  transition: 0.5s;
+}
+
+.sidebar.close .recent {
+  display: none;
+  transition: 0.5s;
+}
+
+.sidebar.close .links {
+  margin-top: auto;
+  transition: 0.5s;
+}
+
+.sidebar.close .links .link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.sidebar.close .links .link::before {
+  top: 20%;
+  transition: 0.5s;
+}
+
+.sidebar.close .links .link>p {
+  display: none;
+  transition: 0.5s;
+}
+
+.sidebar.close .location {
+  display: none;
+  transition: 0.5s;
+}
