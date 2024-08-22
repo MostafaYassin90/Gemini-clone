@@ -18,12 +18,12 @@
 }
 
 .main .nav .user-img {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   overflow: hidden;
   padding: 3px;
-  background: #0075ff;
+  background: #607D8B;
 }
 
 .main .nav .user-img img {

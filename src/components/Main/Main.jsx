@@ -27,7 +27,7 @@ function Main() {
       <div className="nav">
         <p className="head-title">Gemini</p>
         <div className="user-img">
-          <img src={assets.user_icon} alt="user-img" />
+          <img src={assets.user_icon2} alt="user-img" />
         </div>
       </div>
       <div className="main-container">
@@ -60,7 +60,7 @@ function Main() {
         ) : (
           <div className="result">
             <div className="result-title">
-              <img src={assets.user_icon} alt="user-icon" />
+              <img src={assets.user_icon2} alt="user-icon" />
               <p>{recentPrompt}</p>
             </div>
             <div className="result-data">
